@@ -13,9 +13,9 @@ InputManager:
     positiveButton: w
     altNegativeButton: 
     altPositiveButton: 
-    gravity: 1
+    gravity: 12
     dead: 0.001
-    sensitivity: 3
+    sensitivity: 15
     snap: 1
     invert: 0
     type: 0
@@ -29,11 +29,43 @@ InputManager:
     positiveButton: up
     altNegativeButton: 
     altPositiveButton: 
-    gravity: 1
+    gravity: 12
     dead: 0.001
-    sensitivity: 3
+    sensitivity: 15
     snap: 1
     invert: 0
     type: 0
     axis: 1
+    joyNum: 2
+  - serializedVersion: 3
+    m_Name: P1Hori
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: a
+    positiveButton: d
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 12
+    dead: 0.001
+    sensitivity: 15
+    snap: 1
+    invert: 0
+    type: 0
+    axis: 0
+    joyNum: 1
+  - serializedVersion: 3
+    m_Name: P2Hori
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: left
+    positiveButton: right
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 12
+    dead: 0.001
+    sensitivity: 15
+    snap: 1
+    invert: 0
+    type: 0
+    axis: 0
     joyNum: 2

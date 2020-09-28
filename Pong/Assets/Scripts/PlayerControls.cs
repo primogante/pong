@@ -3,12 +3,13 @@
 public class PlayerControls : MonoBehaviour
 {
     // Enter the axis name found in Input Manager here, which signifies which player is being controlled
-    public string playerNumber;
+    public string playerVert;
+    public string playerHori;
 
     // Game experience
     public float speed = 10.0f;
 
-    public float boundary = 4.09f;
+    public float boundary = 5.5f;
 
     // Access
     private Rigidbody2D rigidPaddle;
@@ -27,28 +28,12 @@ public class PlayerControls : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        //var velocity = rigidPaddle.velocity;
-
         // Finds the axis name set in inspector and uses it to find the input being used
-        float vert = Input.GetAxis(playerNumber);
+        float vert = Input.GetAxis(playerVert);
+        float hori = Input.GetAxis(playerHori);
 
         // "Translates" the sum of y-axis movement x speed x delta and turns it into movement.
-        transform.Translate(new Vector2(0, vert) * speed * Time.deltaTime);
-
-        // transform.Translate line of code replaces the below velocity code
-        //if (vertical > .1)
-        //{
-        //    velocity.y = speed;
-        //}
-        //else if (vertical < -.1)
-        //{
-        //    velocity.y = -speed;
-        //}
-        //else
-        //{
-        //    velocity.y = 0;
-        //}
-        //rigidPaddle.velocity = velocity;
+        transform.Translate(new Vector2(hori, vert) * speed * Time.deltaTime);
 
         var position = transform.position;
         if (position.y > boundary)
@@ -59,6 +44,16 @@ public class PlayerControls : MonoBehaviour
         {
             position.y = -boundary;
         }
+
+        if (position.x > 9)
+        {
+            position.x = 9;
+        }
+        else if (position.x < -9)
+        {
+            position.x = -9;
+        }
+
         transform.position = position;
     }
 }

@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ball
+  - LeftWall
+  - Wall
+  - RightWall
+  - PlayArea
   layers:
   - Default
   - TransparentFX
