@@ -18,12 +18,12 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Ball
+  - Wall
+  - PlayArea
+  - LeftWall
+  - RightWall
+  - Paddle
   - 
   - 
   - 
