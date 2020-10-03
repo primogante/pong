@@ -367,6 +367,11 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 96353954753125312, guid: f2058cab061828d4b98cbf4cf8a58def,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: c601716ad306f304dab95e64f2d6967d, type: 2}
     - target: {fileID: 96353954753125313, guid: f2058cab061828d4b98cbf4cf8a58def,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -492,7 +497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7b97fb494470fa4d9df6316abe6cb39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballForce: 30
+  ballForce: 8
   maxSpeed: 10
 --- !u!58 &794779262
 CircleCollider2D:
@@ -672,6 +677,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 96353954753125315, guid: f2058cab061828d4b98cbf4cf8a58def,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: c601716ad306f304dab95e64f2d6967d, type: 2}
     - target: {fileID: 96353954753125340, guid: f2058cab061828d4b98cbf4cf8a58def,
         type: 3}
       propertyPath: moveUp

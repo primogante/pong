@@ -37,8 +37,8 @@ public class PlayerControls : MonoBehaviour
 
     void movePaddle(Vector2 direction)
     {
-        paddle.MovePosition((Vector2)transform.position + (direction * speed * Time.deltaTime));
-        //paddle.velocity = direction * speed;
+        // paddle.MovePosition((Vector2)transform.position + (direction * speed * Time.deltaTime));
+        paddle.velocity = direction * speed;
     }
 
 }
